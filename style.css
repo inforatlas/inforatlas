@@ -1,0 +1,273 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+/* cabeçalho */
+header {
+  background-color: #6827dd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+  font-size: 2em;
+  padding: 0% 3%;
+}
+img#logo{
+  height: 95%;
+}
+div#nav {
+  display: flex;
+  gap: 20%;
+}
+a.nav {
+  color: #fff;
+  text-decoration: none;
+}
+a.nav1 {
+  text-decoration: none;
+  color: #f8ca39;
+  border-bottom: 3px solid #f8ca39;
+  padding-bottom: 0px;
+}
+a.nav:hover {
+  color: #f8ca39;
+  border-bottom: 3px solid #f8ca39;
+  padding-bottom: 0px;
+}
+/* corpo da pagina inicial */
+h1 {
+  font-size: 2em;
+}
+section.amarela {
+  background-color: #f8ca39;
+  margin: 0;
+  padding: 15px 10%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.roxo {
+  background-color: #6827dd;
+  color: #fff;
+  padding: 15px 10%;
+  text-align: justify;
+  display: flex;
+}
+/* corpo da pagina de serviços */
+section.roxo1{
+  background-color: #6827dd;
+  color: #fff;
+  padding: 25px 10%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+article{
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 1%;
+  width: 350px;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+article > h2{
+  text-align: left;
+  font-size: 1.2em;
+}
+article > p{
+  text-align: justify;
+  font-size: 0.9em;
+  padding-left: 20%;
+}
+/* logos redes sociais */
+section.roxoredes{
+  background-color: #6827dd;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+section.roxoredes > a > img{
+  width: 70%;
+  height: 90%;
+  padding: 10%;
+}
+/* formulario de contato */
+form{
+  background-color: #f4f2f2;
+  color: #000;
+  width: 450px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+form>p{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input#nome,input#email,input#tel{
+  background-color: #f4f2f2;
+  width: 300px;
+  height: 25px;
+  border-radius: 10px;
+  border: #000 solid 1px;
+  text-align: center;
+}
+textarea{
+  background-color: #f4f2f2;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  border-radius: 10px;
+  border: #000 solid 1px;
+}
+input#enviar{
+  background-color: #000;
+  color: #fff;
+  width: 100px;
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+}
+input#enviar:hover{
+  background-color: #4cb215;
+  cursor: pointer;
+}
+input::placeholder,textarea::placeholder{
+  text-align: center;
+}
+/* rodapé de todas as paginas */
+footer{
+  background-color: #6827dd;
+  font-size: .8em;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer > p > a{
+  color: #fff;
+  text-decoration: none;
+}
+footer > p > a:hover{
+  color: #f8ca39;
+  text-decoration: none;
+}
+@media(max-width: 1349px){
+  section.roxo1{
+    padding: 25px 10px;
+  }
+  article{
+    width: 350px;
+  }
+}
+@media(max-width: 1100px){
+  section.roxo1{
+    padding: 25px 5%;
+  }
+  article{
+    width: 295px;
+  }
+}
+@media(max-width: 1024px){
+  section.roxo1{
+    padding: 25px 5%;
+  }
+  article{
+    width: 220px;
+  }
+}
+@media(max-width: 768px){
+  header {
+    justify-content: center;
+    gap: 5%;
+    height: 80px;
+    font-size: 1.8em;
+  }
+  div#nav {
+    display: flex;
+    gap: 5%;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+  section.roxo1{
+    padding: 25px 5%;
+  }
+  article{
+    width: 300px;
+  }
+}
+@media(max-width: 683px){
+  header {
+    justify-content: center;
+    gap: 5%;
+    height: 80px;
+    font-size: 1.2em;
+  }
+  div#nav {
+    display: flex;
+    gap: 5%;
+  }
+  h1{
+    font-size: 1.2em;
+  }
+  section.roxo1{
+    padding: 25px 5%;
+  }
+  article{
+    width: 200px;
+  }
+  article > h2{
+    text-align: left;
+    font-size: 1em;
+  }
+  article > p{
+    text-align: justify;
+    font-size: 0.5em;
+    padding-left: 20%;
+  }
+}
+@media(max-width: 461px){
+  header {
+    justify-content: center;
+    gap: 5%;
+    height: 50px;
+    font-size: 1em;
+  }
+  h1{
+    font-size: 1em;
+  }
+  article{
+    width: 185px;
+  }
+  form{
+    width: 300px;
+  }
+  input#nome,input#email,input#tel{
+    width: 250px;
+  }
+  textarea{
+    width: 250px;
+  }
+}
+@media(max-width: 428px){
+  article{
+    width: 300px;
+  }
+}
